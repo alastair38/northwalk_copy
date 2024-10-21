@@ -1,0 +1,37 @@
+{
+  "id": "footnotes",
+  "type": "SharedSlice",
+  "name": "Footnotes",
+  "description": "Footnotes",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "note": {
+          "type": "Group",
+          "config": {
+            "label": "Note",
+            "repeat": true,
+            "fields": {
+              "body": {
+                "type": "StructuredText",
+                "config": {
+                  "label": "Body",
+                  "placeholder": "Add your footnote content here. It can contain links, italic and bold.",
+                  "allowTargetBlank": true,
+                  "single": "paragraph,strong,em,hyperlink,rtl"
+                }
+              }
+            }
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

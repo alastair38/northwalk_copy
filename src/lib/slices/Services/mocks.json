@@ -1,0 +1,353 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "light",
+		"primary": {
+			"heading": {
+				"__TYPE__": "FieldContent",
+				"type": "Text",
+				"value": "Services"
+			},
+			"services": {
+				"__TYPE__": "GroupContentType",
+				"value": [
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"link",
+								{
+									"__TYPE__": "LinkContent",
+									"value": {
+										"__TYPE__": "ExternalLink",
+										"url": "https://prismic.io"
+									}
+								}
+							],
+							[
+								"linkText",
+								{
+									"__TYPE__": "FieldContent",
+									"type": "Text",
+									"value": "Learn More"
+								}
+							],
+							[
+								"icon",
+								{
+									"__TYPE__": "FieldContent",
+									"type": "Select",
+									"value": "arrow"
+								}
+							],
+							[
+								"style",
+								{
+									"__TYPE__": "FieldContent",
+									"value": "brand",
+									"type": "Select"
+								}
+							],
+							[
+								"title",
+								{
+									"__TYPE__": "FieldContent",
+									"type": "Text",
+									"value": "First Service"
+								}
+							],
+							[
+								"description",
+								{
+									"__TYPE__": "FieldContent",
+									"type": "Text",
+									"value": "Collaboratively orchestrate out-of-the-box opportunities vis-a-vis magnetic intellectual capital. Energistically network corporate outsourcing after installed base channels. Synergistically whiteboard high-quality best practices."
+								}
+							]
+						]
+					},
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"description",
+								{
+									"__TYPE__": "FieldContent",
+									"type": "Text",
+									"value": "Collaboratively orchestrate out-of-the-box opportunities vis-a-vis magnetic intellectual capital. Energistically network corporate outsourcing after installed base channels. Synergistically whiteboard high-quality best practices."
+								}
+							],
+							[
+								"title",
+								{
+									"__TYPE__": "FieldContent",
+									"type": "Text",
+									"value": "Second Service"
+								}
+							],
+							[
+								"icon",
+								{
+									"__TYPE__": "FieldContent",
+									"type": "Select",
+									"value": "bell"
+								}
+							],
+							[
+								"link",
+								{
+									"__TYPE__": "LinkContent",
+									"value": {
+										"__TYPE__": "ExternalLink",
+										"url": "https://bbc.co.uk",
+										"target": ""
+									}
+								}
+							],
+							[
+								"style",
+								{
+									"__TYPE__": "FieldContent",
+									"type": "Select",
+									"value": "accent"
+								}
+							]
+						]
+					},
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"title",
+								{
+									"__TYPE__": "FieldContent",
+									"type": "Text",
+									"value": "Third Service"
+								}
+							],
+							[
+								"description",
+								{
+									"__TYPE__": "FieldContent",
+									"type": "Text",
+									"value": "Collaboratively orchestrate out-of-the-box opportunities vis-a-vis magnetic intellectual capital. Energistically network corporate outsourcing after installed base channels. Synergistically whiteboard high-quality best practices."
+								}
+							],
+							[
+								"link",
+								{
+									"__TYPE__": "LinkContent",
+									"value": {
+										"__TYPE__": "ExternalLink",
+										"url": "https://bbc.co.uk",
+										"target": ""
+									}
+								}
+							],
+							[
+								"icon",
+								{
+									"__TYPE__": "FieldContent",
+									"type": "Select",
+									"value": "aperture"
+								}
+							],
+							[
+								"style",
+								{
+									"__TYPE__": "FieldContent",
+									"type": "Select",
+									"value": "highlight"
+								}
+							]
+						]
+					}
+				]
+			},
+			"description": {
+				"__TYPE__": "FieldContent",
+				"type": "Text",
+				"value": "Collaboratively orchestrate out-of-the-box opportunities vis-a-vis magnetic intellectual capital. Energistically network corporate outsourcing after installed base channels. Synergistically whiteboard high-quality best practices."
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": []
+			}
+		]
+	},
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"heading": {
+				"__TYPE__": "FieldContent",
+				"type": "Text",
+				"value": "Services"
+			},
+			"services": {
+				"__TYPE__": "GroupContentType",
+				"value": [
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"title",
+								{
+									"__TYPE__": "FieldContent",
+									"type": "Text",
+									"value": "Title One"
+								}
+							],
+							[
+								"link",
+								{
+									"__TYPE__": "LinkContent",
+									"value": {
+										"__TYPE__": "ExternalLink",
+										"url": "https://prismic.io"
+									}
+								}
+							],
+							[
+								"icon",
+								{
+									"__TYPE__": "FieldContent",
+									"type": "Select",
+									"value": "arrow"
+								}
+							],
+							[
+								"description",
+								{
+									"__TYPE__": "FieldContent",
+									"type": "Text",
+									"value": "Collaboratively orchestrate out-of-the-box opportunities vis-a-vis magnetic intellectual capital. Energistically network corporate outsourcing after installed base channels. Synergistically whiteboard high-quality best practices."
+								}
+							],
+							[
+								"style",
+								{
+									"__TYPE__": "FieldContent",
+									"type": "Select",
+									"value": "highlight"
+								}
+							]
+						]
+					},
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"icon",
+								{
+									"__TYPE__": "FieldContent",
+									"value": "gear",
+									"type": "Select"
+								}
+							],
+							[
+								"title",
+								{
+									"__TYPE__": "FieldContent",
+									"type": "Text",
+									"value": "Title Two"
+								}
+							],
+							[
+								"description",
+								{
+									"__TYPE__": "FieldContent",
+									"type": "Text",
+									"value": "Collaboratively orchestrate out-of-the-box opportunities vis-a-vis magnetic intellectual capital. Energistically network corporate outsourcing after installed base channels. Synergistically whiteboard high-quality best practices."
+								}
+							],
+							[
+								"link",
+								{
+									"__TYPE__": "LinkContent",
+									"value": {
+										"__TYPE__": "ExternalLink",
+										"url": "https://bbc.co.uk",
+										"target": "_blank"
+									}
+								}
+							],
+							[
+								"style",
+								{
+									"__TYPE__": "FieldContent",
+									"value": "brand",
+									"type": "Select"
+								}
+							]
+						]
+					},
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"title",
+								{
+									"__TYPE__": "FieldContent",
+									"type": "Text",
+									"value": "Title three"
+								}
+							],
+							[
+								"description",
+								{
+									"__TYPE__": "FieldContent",
+									"type": "Text",
+									"value": "Collaboratively orchestrate out-of-the-box opportunities vis-a-vis magnetic intellectual capital. Energistically network corporate outsourcing after installed base channels. Synergistically whiteboard high-quality best practices."
+								}
+							],
+							[
+								"icon",
+								{
+									"__TYPE__": "FieldContent",
+									"value": "calendar",
+									"type": "Select"
+								}
+							],
+							[
+								"style",
+								{
+									"__TYPE__": "FieldContent",
+									"type": "Select",
+									"value": "accent"
+								}
+							],
+							[
+								"link",
+								{
+									"__TYPE__": "LinkContent",
+									"value": {
+										"__TYPE__": "ExternalLink",
+										"url": "https://bbc.co.uk",
+										"target": ""
+									}
+								}
+							],
+							[
+								"linkText",
+								{
+									"__TYPE__": "FieldContent",
+									"type": "Text",
+									"value": "Learn more"
+								}
+							]
+						]
+					}
+				]
+			},
+			"description": {
+				"__TYPE__": "FieldContent",
+				"type": "Text",
+				"value": "Collaboratively orchestrate out-of-the-box opportunities vis-a-vis magnetic intellectual capital. Energistically network corporate outsourcing after installed base channels. Synergistically whiteboard high-quality best practices."
+			}
+		},
+		"items": []
+	}
+]

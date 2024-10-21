@@ -1,0 +1,143 @@
+{
+	"format": "custom",
+	"id": "settings",
+	"label": "Settings",
+	"repeatable": false,
+	"status": true,
+	"json": {
+		"Main Navigation": {
+			"navigation": {
+				"type": "Group",
+				"config": {
+					"label": "Navigation",
+					"repeat": true,
+					"fields": {
+						"link": {
+							"type": "Link",
+							"config": {
+								"label": "Link",
+								"placeholder": "",
+								"select": null
+							}
+						},
+						"label": {
+							"type": "Text",
+							"config": {
+								"label": "Label",
+								"placeholder": ""
+							}
+						},
+						"cta_button": {
+							"type": "Boolean",
+							"config": {
+								"label": "CTA Button",
+								"default_value": false,
+								"placeholder_true": "true",
+								"placeholder_false": "false"
+							}
+						}
+					}
+				}
+			}
+		},
+		"Footer Navigation": {
+			"footer_navigation": {
+				"type": "Group",
+				"config": {
+					"label": "Footer Navigation",
+					"repeat": true,
+					"fields": {
+						"link": {
+							"type": "Link",
+							"config": {
+								"label": "Link",
+								"placeholder": "",
+								"select": null
+							}
+						},
+						"label": {
+							"type": "Text",
+							"config": {
+								"label": "Label",
+								"placeholder": ""
+							}
+						}
+					}
+				}
+			}
+		},
+		"SEO": {
+			"site_title": {
+				"type": "Text",
+				"config": {
+					"label": "Site title",
+					"placeholder": ""
+				}
+			},
+			"meta_description": {
+				"type": "Text",
+				"config": {
+					"label": "Site description",
+					"placeholder": ""
+				}
+			},
+			"og_image": {
+				"type": "Image",
+				"config": {
+					"label": "Open Graph Image",
+					"constraint": {},
+					"thumbnails": []
+				}
+			},
+			"custom_type_meta": {
+				"type": "Group",
+				"config": {
+					"label": "Metadata for archive pages",
+					"repeat": true,
+					"fields": {
+						"content_type": {
+							"type": "Select",
+							"config": {
+								"label": "Content type",
+								"placeholder": "",
+								"options": ["Post", "Case Study", "Publications"]
+							}
+						},
+						"title": {
+							"type": "Text",
+							"config": {
+								"label": "Title",
+								"placeholder": ""
+							}
+						},
+						"description": {
+							"type": "Text",
+							"config": {
+								"label": "Description",
+								"placeholder": ""
+							}
+						}
+					}
+				}
+			}
+		},
+		"Appearance": {
+			"theme": {
+				"type": "Select",
+				"config": {
+					"label": "Theme",
+					"placeholder": "",
+					"options": ["default", "fire", "ice", "autumn"],
+					"default_value": "default"
+				}
+			},
+			"latest_articles": {
+				"type": "Number",
+				"config": {
+					"label": "Latest Articles",
+					"placeholder": "Max content items to show in the 'Latest articles' block"
+				}
+			}
+		}
+	}
+}

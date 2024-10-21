@@ -1,0 +1,25 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"heading": {
+				"__TYPE__": "FieldContent",
+				"type": "Text",
+				"value": "Latest"
+			},
+			"body": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Ex laboris consequat nisi nulla magna veniam quis excepteur minim sit pariatur. Veniam eu consequat do sint exercitation elit consectetur esse cupidatat nulla adipisicing."
+						}
+					}
+				]
+			}
+		},
+		"items": []
+	}
+]

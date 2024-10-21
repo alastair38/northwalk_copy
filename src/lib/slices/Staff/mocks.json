@@ -1,0 +1,18 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"title": {
+				"__TYPE__": "FieldContent",
+				"type": "Text",
+				"value": "Researchers"
+			},
+			"staff_members": {
+				"__TYPE__": "GroupContentType",
+				"value": []
+			}
+		},
+		"items": []
+	}
+]

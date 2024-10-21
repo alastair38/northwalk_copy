@@ -1,0 +1,45 @@
+{
+  "id": "staff",
+  "type": "SharedSlice",
+  "name": "Staff",
+  "description": "Staff",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "title": {
+          "type": "Text",
+          "config": {
+            "label": "Title",
+            "placeholder": ""
+          }
+        },
+        "staff_members": {
+          "type": "Group",
+          "config": {
+            "label": "Staff Members",
+            "repeat": true,
+            "fields": {
+              "person": {
+                "type": "Link",
+                "config": {
+                  "label": "Person",
+                  "select": "document",
+                  "customtypes": [
+                    "people"
+                  ]
+                }
+              }
+            }
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

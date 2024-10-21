@@ -1,0 +1,37 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"image": {
+				"__TYPE__": "ImageContent",
+				"provider": "imgix",
+				"url": "https://images.unsplash.com/photo-1610040855959-27944b04f12d?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw0fHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3MjQ2ODYxNzN8MA&ixlib=rb-4.0.3&q=85",
+				"alt": "orange fruit on brown wooden table",
+				"origin": {
+					"id": "agP9RgnWZAY",
+					"url": "https://images.unsplash.com/photo-1610040855959-27944b04f12d?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw0fHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3MjQ2ODYxNzN8MA&ixlib=rb-4.0.3&q=85",
+					"width": 5143,
+					"height": 4114
+				},
+				"width": 5143,
+				"height": 4114,
+				"edit": {
+					"background": "transparent",
+					"zoom": 1,
+					"crop": {
+						"x": 0,
+						"y": 0
+					}
+				},
+				"thumbnails": {}
+			},
+			"caption": {
+				"__TYPE__": "FieldContent",
+				"type": "Text",
+				"value": "Caption"
+			}
+		},
+		"items": []
+	}
+]

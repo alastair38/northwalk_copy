@@ -1,0 +1,29 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"text": {
+				"__TYPE__": "FieldContent",
+				"value": "got",
+				"type": "Text"
+			},
+			"citation": {
+				"__TYPE__": "FieldContent",
+				"type": "Text",
+				"value": "Timothy J Parker, Quannum Projects"
+			},
+			"heading": {
+				"__TYPE__": "FieldContent",
+				"type": "Text",
+				"value": "Great service"
+			},
+			"description": {
+				"__TYPE__": "FieldContent",
+				"type": "Text",
+				"value": "Collaboratively orchestrate out-of-the-box opportunities vis-a-vis magnetic intellectual capital. "
+			}
+		},
+		"items": []
+	}
+]

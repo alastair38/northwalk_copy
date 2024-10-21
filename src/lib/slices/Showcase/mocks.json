@@ -1,0 +1,147 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"image": {
+				"url": "https://images.unsplash.com/photo-1494587416117-f102a2ac0a8d?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwyNnx8dXJiYW58ZW58MHx8fHwxNzIzMDIzMDgwfDA&ixlib=rb-4.0.3&q=85",
+				"alt": "people gathered on street",
+				"origin": {
+					"id": "Mn9Fa_wQH-M",
+					"url": "https://images.unsplash.com/photo-1494587416117-f102a2ac0a8d?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwyNnx8dXJiYW58ZW58MHx8fHwxNzIzMDIzMDgwfDA&ixlib=rb-4.0.3&q=85",
+					"width": 6720,
+					"height": 4480
+				},
+				"width": 6720,
+				"height": 4480,
+				"edit": {
+					"background": "transparent",
+					"zoom": 1,
+					"crop": {
+						"x": 0,
+						"y": 0
+					}
+				},
+				"credits": null,
+				"__TYPE__": "ImageContent",
+				"thumbnails": {}
+			},
+			"icon": {
+				"__TYPE__": "FieldContent",
+				"type": "Select",
+				"value": "gear"
+			},
+			"body": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Collaboratively orchestrate out-of-the-box opportunities vis-a-vis magnetic intellectual capital. Energistically network corporate outsourcing after installed base channels. Synergistically whiteboard high-quality best practices.",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"button_link": {
+				"__TYPE__": "LinkContent",
+				"value": {
+					"__TYPE__": "ExternalLink",
+					"url": "https://prismic.io"
+				}
+			},
+			"button_text": {
+				"__TYPE__": "FieldContent",
+				"type": "Text",
+				"value": "View More"
+			},
+			"subheading": {
+				"__TYPE__": "FieldContent",
+				"type": "Text",
+				"value": "Build with North Walk"
+			},
+			"heading": {
+				"__TYPE__": "FieldContent",
+				"type": "Text",
+				"value": "Showcase"
+			}
+		},
+		"items": []
+	},
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "reverse",
+		"primary": {
+			"image": {
+				"url": "https://images.unsplash.com/photo-1494587416117-f102a2ac0a8d?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwyNnx8dXJiYW58ZW58MHx8fHwxNzIzMDIzMDgwfDA&ixlib=rb-4.0.3&q=85",
+				"alt": "people gathered on street",
+				"origin": {
+					"id": "Mn9Fa_wQH-M",
+					"url": "https://images.unsplash.com/photo-1494587416117-f102a2ac0a8d?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwyNnx8dXJiYW58ZW58MHx8fHwxNzIzMDIzMDgwfDA&ixlib=rb-4.0.3&q=85",
+					"width": 6720,
+					"height": 4480
+				},
+				"width": 6720,
+				"height": 4480,
+				"edit": {
+					"background": "transparent",
+					"zoom": 1,
+					"crop": {
+						"x": 0,
+						"y": 0
+					}
+				},
+				"credits": null,
+				"__TYPE__": "ImageContent",
+				"thumbnails": {}
+			},
+			"icon": {
+				"__TYPE__": "FieldContent",
+				"value": "cycle",
+				"type": "Select"
+			},
+			"button_link": {
+				"__TYPE__": "LinkContent",
+				"value": {
+					"__TYPE__": "ExternalLink",
+					"url": "http://google.com"
+				}
+			},
+			"button_text": {
+				"__TYPE__": "FieldContent",
+				"type": "Text",
+				"value": "View more"
+			},
+			"subheading": {
+				"__TYPE__": "FieldContent",
+				"type": "Text",
+				"value": "Build with North Walk"
+			},
+			"heading": {
+				"__TYPE__": "FieldContent",
+				"type": "Text",
+				"value": "Showcase"
+			},
+			"body": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Collaboratively orchestrate out-of-the-box opportunities vis-a-vis magnetic intellectual capital. Energistically network corporate outsourcing after installed base channels. Synergistically whiteboard high-quality best practices.",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": []
+			}
+		]
+	}
+]

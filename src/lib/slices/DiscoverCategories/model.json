@@ -1,0 +1,54 @@
+{
+  "id": "discover_categories",
+  "type": "SharedSlice",
+  "name": "DiscoverCategories",
+  "description": "DiscoverCategories",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "heading": {
+          "type": "Text",
+          "config": {
+            "label": "Heading",
+            "placeholder": ""
+          }
+        },
+        "categories": {
+          "type": "Group",
+          "config": {
+            "label": "Categories",
+            "repeat": true,
+            "fields": {
+              "category": {
+                "type": "Link",
+                "config": {
+                  "label": "Category",
+                  "select": "document",
+                  "customtypes": [
+                    "categories"
+                  ]
+                }
+              },
+              "wide": {
+                "type": "Boolean",
+                "config": {
+                  "label": "Wide",
+                  "default_value": false,
+                  "placeholder_true": "true",
+                  "placeholder_false": "false"
+                }
+              }
+            }
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

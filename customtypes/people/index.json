@@ -1,0 +1,107 @@
+{
+	"format": "page",
+	"id": "people",
+	"label": "People",
+	"repeatable": true,
+	"status": true,
+	"json": {
+		"Main": {
+			"uid": {
+				"config": {
+					"label": "Slug"
+				},
+				"type": "UID"
+			},
+			"name": {
+				"type": "Text",
+				"config": {
+					"label": "Name",
+					"placeholder": ""
+				}
+			},
+			"email": {
+				"type": "Text",
+				"config": {
+					"label": "Email",
+					"placeholder": ""
+				}
+			},
+			"work_title": {
+				"type": "Text",
+				"config": {
+					"label": "Work Title",
+					"placeholder": ""
+				}
+			},
+			"biography": {
+				"type": "StructuredText",
+				"config": {
+					"label": "Biography",
+					"placeholder": "",
+					"allowTargetBlank": true,
+					"multi": "paragraph,strong,em"
+				}
+			},
+			"image": {
+				"type": "Image",
+				"config": {
+					"label": "Image",
+					"constraint": {},
+					"thumbnails": []
+				}
+			},
+			"showbackground": {
+				"type": "Boolean",
+				"config": {
+					"label": "Set image as background",
+					"placeholder_false": "No",
+					"placeholder_true": "Yes",
+					"default_value": false
+				}
+			},
+			"slices": {
+				"type": "Slices",
+				"fieldset": "Slice Zone",
+				"config": {
+					"choices": {}
+				}
+			}
+		},
+		"Contact Links": {
+			"platform": {
+				"type": "Group",
+				"config": {
+					"label": "Contact Platform",
+					"repeat": true,
+					"fields": {
+						"platform_name": {
+							"type": "Select",
+							"config": {
+								"label": "Platform Name",
+								"placeholder": "",
+								"options": ["twitter", "instagram", "email"],
+								"default_value": "twitter"
+							}
+						},
+						"link": {
+							"type": "Link",
+							"config": {
+								"label": "Link",
+								"placeholder": "",
+								"allowTargetBlank": true,
+								"select": null
+							}
+						},
+						"link_text": {
+							"type": "Text",
+							"config": {
+								"label": "Link Text",
+								"placeholder": ""
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

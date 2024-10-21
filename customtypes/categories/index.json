@@ -1,0 +1,41 @@
+{
+	"format": "custom",
+	"id": "categories",
+	"label": "Publication Categories",
+	"repeatable": true,
+	"status": true,
+	"json": {
+		"Main": {
+			"uid": {
+				"type": "UID",
+				"config": {
+					"label": "Slug"
+				}
+			},
+			"title": {
+				"type": "Text",
+				"config": {
+					"label": "Title",
+					"placeholder": ""
+				}
+			},
+			"description": {
+				"type": "StructuredText",
+				"config": {
+					"label": "Description",
+					"placeholder": "",
+					"allowTargetBlank": true,
+					"multi": "paragraph,strong,em,hyperlink,image,list-item,o-list-item,rtl"
+				}
+			},
+			"image": {
+				"type": "Image",
+				"config": {
+					"label": "Image",
+					"constraint": {},
+					"thumbnails": []
+				}
+			}
+		}
+	}
+}

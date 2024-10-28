@@ -105,6 +105,18 @@
 		@apply my-6;
 	}
 
+	body:has(main[data-theme='ice'] [data-slice-type='hero'][data-slice-variation='alternative'])
+		header#home-header
+		> nav {
+		@apply text-base;
+	}
+
+	body:has(main[data-theme='ice'] [data-slice-type='hero'][data-slice-variation='alternative'])
+		header#home-header
+		> nav
+		a {
+		@apply hover:opacity-50;
+	}
 	p {
 		@apply hyphens-auto break-words;
 	}

@@ -65,7 +65,7 @@
 	},
 	{
 		"__TYPE__": "SharedSliceContent",
-		"variation": "dark",
+		"variation": "alternative",
 		"primary": {
 			"heading": {
 				"__TYPE__": "StructuredTextContent",
@@ -73,7 +73,7 @@
 					{
 						"type": "heading1",
 						"content": {
-							"text": "Largest"
+							"text": "These"
 						}
 					}
 				]
@@ -84,7 +84,7 @@
 					{
 						"type": "paragraph",
 						"content": {
-							"text": "Excepteur ex non esse velit. Ipsum eiusmod nisi do aliquip cillum dolor commodo. Tempor aute aliqua aliqua sit amet reprehenderit velit laborum ipsum aute mollit nulla."
+							"text": "Magna eu nisi quis aliqua dolore aute mollit elit adipisicing proident cupidatat. Minim do irure duis aliqua esse incididunt ut sint aliquip excepteur. Deserunt irure labore eiusmod labore dolor laboris voluptate irure voluptate consequat elit labore."
 						}
 					}
 				]
@@ -98,19 +98,19 @@
 			},
 			"button_label": {
 				"__TYPE__": "FieldContent",
-				"value": "vote",
+				"value": "cake",
 				"type": "Text"
 			},
 			"image": {
 				"origin": {
 					"id": "main",
-					"url": "https://images.unsplash.com/photo-1494173853739-c21f58b16055",
-					"width": 3277,
-					"height": 4092
+					"url": "https://images.unsplash.com/photo-1587613865763-4b8b0d19e8ab",
+					"width": 12288,
+					"height": 16384
 				},
-				"url": "https://images.unsplash.com/photo-1494173853739-c21f58b16055",
-				"width": 3277,
-				"height": 4092,
+				"url": "https://images.unsplash.com/photo-1587613865763-4b8b0d19e8ab",
+				"width": 12288,
+				"height": 16384,
 				"edit": {
 					"zoom": 1,
 					"crop": {

@@ -138,6 +138,16 @@
 					"placeholder": "Max content items to show in the 'Latest articles' block"
 				}
 			}
+		},
+		"Logo": {
+			"logo": {
+				"type": "Image",
+				"config": {
+					"label": "Logo",
+					"constraint": {},
+					"thumbnails": []
+				}
+			}
 		}
 	}
 }

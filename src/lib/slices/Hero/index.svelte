@@ -17,18 +17,18 @@
 	<div
 		class={clsx(
 			'absolute inset-0 -top-32 bottom-0 -z-40 w-full',
-			slice.variation === 'dark'
+			slice.variation === 'alternative'
 				? 'bg-gradient-to-b from-content-dark to-content'
 				: 'bg-gradient-to-b from-base-light to-base'
 		)}
 	>
 		<Dotted
 			variant="rounded"
-			class={clsx('', slice.variation === 'dark' ? 'text-accent' : 'text-content')}
+			class={clsx('', slice.variation === 'alternative' ? 'text-accent' : 'text-content')}
 		/>
 	</div>
 
-	<div class={clsx('text-center', slice.variation === 'dark' && 'text-base')}>
+	<div class={clsx('text-center', slice.variation === 'alternative' && 'text-base')}>
 		{#if slice.primary.heading}
 			<PrismicRichText
 				field={slice.primary.heading}

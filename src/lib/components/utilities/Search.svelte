@@ -20,7 +20,7 @@
 </script>
 
 <button
-	class="group flex items-center gap-2 rounded-full bg-base-dark/30 px-3 py-1 text-sm font-light text-content ring-offset-2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-dark"
+	class="group flex items-center gap-2 rounded-full border border-content-light/10 bg-base px-3 py-1 text-sm font-light text-content ring-offset-2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-dark"
 	on:click={() => dialog?.showModal()}
 	><span>Search</span><IconSearch class="h-5 w-5 group-hover:text-brand" />
 </button>
@@ -77,7 +77,7 @@
 					<button
 						disabled={sending}
 						type="submit"
-						class="w-full rounded-lg bg-brand px-5 py-2.5 text-center text-base text-sm font-medium ring-offset-2 hover:bg-brand-light focus:outline-none focus-visible:ring-2 focus-visible:ring-brand disabled:opacity-25 sm:w-auto"
+						class="w-full rounded-lg bg-brand px-5 py-2.5 text-center text-sm font-medium text-base ring-offset-2 hover:bg-brand-light focus:outline-none focus-visible:ring-2 focus-visible:ring-brand disabled:opacity-25 sm:w-auto"
 						>Search</button
 					>
 				</div>

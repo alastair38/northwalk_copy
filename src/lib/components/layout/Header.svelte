@@ -1,25 +1,28 @@
-<script>
-	import { PrismicLink } from '@prismicio/svelte';
-
-	import IconClose from '~icons/ph/x-bold';
-	import IconMenu from '~icons/ph/list-bold';
-
-	import WordMark from '../design/Logo.svelte';
-	import ButtonLink from '../utilities/ButtonLink.svelte';
+<script lang="ts">
+	// helpers + stores
 	import clsx from 'clsx';
 	import { asLink } from '@prismicio/client';
 	import { page } from '$app/stores';
+
+	// types
+	import type { SettingsDocument } from '../../../prismicio-types';
+
+	// icons
+	import IconClose from '~icons/ph/x-bold';
+	import IconMenu from '~icons/ph/list-bold';
+
+	// components
+	import { PrismicLink, PrismicImage } from '@prismicio/svelte';
+	import ButtonLink from '../utilities/ButtonLink.svelte';
 	import Search from '../utilities/Search.svelte';
 
-	/** @type {import("@prismicio/client").Content.SettingsDocument} */
-	export let settings;
+	export let settings: SettingsDocument<string>;
 
 	let isOpen = false;
 	const toggleOpen = () => (isOpen = !isOpen);
 	const close = () => (isOpen = false);
 
-	/** @param {import('@prismicio/client').LinkField} link*/
-	const isActive = (link) => {
+	const isActive = (link: import('@prismicio/client').LinkField) => {
 		const path = asLink(link);
 		if (path === $page.url.pathname) {
 			return path;
@@ -29,13 +32,22 @@
 
 <header id={`${$page.url.pathname === '/' ? 'home-header' : 'main-header'}`} class="p-4 md:p-6">
 	<nav
-		class={`mx-auto flex max-w-6xl flex-col justify-between ${$page.url.pathname === '/' ? 'rounded-md bg-base shadow-2xl' : ''} px-4 py-2 font-medium text-content md:flex-row md:items-center`}
-		aria-label="Main"
+		class={clsx(
+			'mx-auto flex max-w-6xl flex-col justify-between px-4 py-3 font-medium text-content md:flex-row md:items-center'
+			// $page.url.pathname === '/' && $page.data.settings.data.theme === 'ice'
+			// 	? 'rounded-md  text-content '
+			// 	: 'text-content'
+		)}
+		aria-label="Main navigation"
 	>
 		<div class="flex items-center justify-between">
 			<a href="/" on:click={close} class="z-50">
-				<WordMark />
-				<span class="sr-only">{settings.data.site_title} home page</span>
+				{#if settings.data?.logo}
+					<PrismicImage field={settings.data.logo} class="h-12 w-auto" />
+					<span class="sr-only">{settings.data?.site_title} home page</span>
+				{:else}
+					<span>You need to add your logo to the site settings</span>
+				{/if}
 			</a>
 
 			<button
@@ -66,7 +78,7 @@
 				<IconClose aria-hidden="true" />
 			</button>
 			<ul class="grid justify-items-end gap-8">
-				{#each settings.data.navigation as item (item.label)}
+				{#each settings.data?.navigation as item (item.label)}
 					<li>
 						{#if item.cta_button}
 							<ButtonLink
@@ -93,7 +105,7 @@
 
 		<!-- Desktop Nav -->
 		<ul class="hidden items-center gap-6 md:flex">
-			{#each settings.data.navigation as item (item.label)}
+			{#each settings.data?.navigation as item (item.label)}
 				<li>
 					{#if item.cta_button}
 						<!-- <ButtonLink
@@ -107,7 +119,7 @@
 						<PrismicLink
 							on:click={close}
 							field={item.link}
-							class={`inline-flex items-center rounded-full px-3 py-1 hover:text-content/50 focus-visible:outline focus-visible:outline-offset-2 ${isActive(item.link) ? 'underline decoration-brand' : ''}`}
+							class={`inline-flex items-center rounded-full px-3 py-1 hover:opacity-50 focus-visible:no-underline focus-visible:outline focus-visible:outline-offset-2 ${isActive(item.link) ? 'underline decoration-brand' : ''}`}
 							aria-current={isActive(item.link) ? 'page' : undefined}
 						>
 							{item.label}

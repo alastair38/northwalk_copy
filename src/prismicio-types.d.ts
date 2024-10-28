@@ -246,6 +246,89 @@ export type CategoriesDocument<Lang extends string = string> = prismic.PrismicDo
 	Lang
 >;
 
+type HomepageDocumentDataSlicesSlice =
+	| CaseStudiesSlice
+	| StaffSlice
+	| ShowcaseSlice
+	| HeroSlice
+	| RichTextSlice
+	| TabsSlice
+	| TestimonialsSlice
+	| HorizontalGallerySlice
+	| MediaEmbedSlice
+	| ServicesSlice
+	| LatestArticlesSlice
+	| FullWidthImageSlice
+	| MasonryGallerySlice
+	| FootnotesSlice
+	| FaqsSlice
+	| FormSlice
+	| DiscoverCategoriesSlice
+	| DetailsCardSlice
+	| CarouselSlice;
+
+/**
+ * Content for Homepage documents
+ */
+interface HomepageDocumentData {
+	/**
+	 * Slice Zone field in *Homepage*
+	 *
+	 * - **Field Type**: Slice Zone
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: homepage.slices[]
+	 * - **Tab**: Main
+	 * - **Documentation**: https://prismic.io/docs/field#slices
+	 */
+	slices: prismic.SliceZone<HomepageDocumentDataSlicesSlice> /**
+	 * Meta Title field in *Homepage*
+	 *
+	 * - **Field Type**: Text
+	 * - **Placeholder**: A title of the page used for social media and search engines
+	 * - **API ID Path**: homepage.meta_title
+	 * - **Tab**: SEO & Metadata
+	 * - **Documentation**: https://prismic.io/docs/field#key-text
+	 */;
+	meta_title: prismic.KeyTextField;
+
+	/**
+	 * Meta Description field in *Homepage*
+	 *
+	 * - **Field Type**: Text
+	 * - **Placeholder**: A brief summary of the page
+	 * - **API ID Path**: homepage.meta_description
+	 * - **Tab**: SEO & Metadata
+	 * - **Documentation**: https://prismic.io/docs/field#key-text
+	 */
+	meta_description: prismic.KeyTextField;
+
+	/**
+	 * Meta Image field in *Homepage*
+	 *
+	 * - **Field Type**: Image
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: homepage.meta_image
+	 * - **Tab**: SEO & Metadata
+	 * - **Documentation**: https://prismic.io/docs/field#image
+	 */
+	meta_image: prismic.ImageField<never>;
+}
+
+/**
+ * Homepage document from Prismic
+ *
+ * - **API ID**: `homepage`
+ * - **Repeatable**: `false`
+ * - **Documentation**: https://prismic.io/docs/custom-types
+ *
+ * @typeParam Lang - Language API ID of the document.
+ */
+export type HomepageDocument<Lang extends string = string> = prismic.PrismicDocumentWithoutUID<
+	Simplify<HomepageDocumentData>,
+	'homepage',
+	Lang
+>;
+
 type PageDocumentDataSlicesSlice =
 	| FullWidthImageSlice
 	| ServicesSlice
@@ -1094,7 +1177,16 @@ interface SettingsDocumentData {
 	 * - **Tab**: Appearance
 	 * - **Documentation**: https://prismic.io/docs/field#number
 	 */
-	latest_articles: prismic.NumberField;
+	latest_articles: prismic.NumberField /**
+	 * Logo field in *Settings*
+	 *
+	 * - **Field Type**: Image
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: settings.logo
+	 * - **Tab**: Logo
+	 * - **Documentation**: https://prismic.io/docs/field#image
+	 */;
+	logo: prismic.ImageField<never>;
 }
 
 /**
@@ -1191,6 +1283,7 @@ export type AllDocumentTypes =
 	| ArticleCategoriesDocument
 	| CaseStudyDocument
 	| CategoriesDocument
+	| HomepageDocument
 	| PageDocument
 	| PeopleDocument
 	| PostDocument
@@ -2082,77 +2175,77 @@ export type HeroSliceDefault = prismic.SharedSliceVariation<
 >;
 
 /**
- * Primary content in *Hero → Dark → Primary*
+ * Primary content in *Hero → Alternative → Primary*
  */
-export interface HeroSliceDarkPrimary {
+export interface HeroSliceAlternativePrimary {
 	/**
-	 * Heading field in *Hero → Dark → Primary*
+	 * Heading field in *Hero → Alternative → Primary*
 	 *
 	 * - **Field Type**: Rich Text
 	 * - **Placeholder**: *None*
-	 * - **API ID Path**: hero.dark.primary.heading
+	 * - **API ID Path**: hero.alternative.primary.heading
 	 * - **Documentation**: https://prismic.io/docs/field#rich-text-title
 	 */
 	heading: prismic.RichTextField;
 
 	/**
-	 * Body field in *Hero → Dark → Primary*
+	 * Body field in *Hero → Alternative → Primary*
 	 *
 	 * - **Field Type**: Rich Text
 	 * - **Placeholder**: *None*
-	 * - **API ID Path**: hero.dark.primary.body
+	 * - **API ID Path**: hero.alternative.primary.body
 	 * - **Documentation**: https://prismic.io/docs/field#rich-text-title
 	 */
 	body: prismic.RichTextField;
 
 	/**
-	 * Button Link field in *Hero → Dark → Primary*
+	 * Button Link field in *Hero → Alternative → Primary*
 	 *
 	 * - **Field Type**: Link
 	 * - **Placeholder**: *None*
-	 * - **API ID Path**: hero.dark.primary.button_link
+	 * - **API ID Path**: hero.alternative.primary.button_link
 	 * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
 	 */
 	button_link: prismic.LinkField;
 
 	/**
-	 * Button Label field in *Hero → Dark → Primary*
+	 * Button Label field in *Hero → Alternative → Primary*
 	 *
 	 * - **Field Type**: Text
 	 * - **Placeholder**: *None*
-	 * - **API ID Path**: hero.dark.primary.button_label
+	 * - **API ID Path**: hero.alternative.primary.button_label
 	 * - **Documentation**: https://prismic.io/docs/field#key-text
 	 */
 	button_label: prismic.KeyTextField;
 
 	/**
-	 * Image field in *Hero → Dark → Primary*
+	 * Image field in *Hero → Alternative → Primary*
 	 *
 	 * - **Field Type**: Image
 	 * - **Placeholder**: *None*
-	 * - **API ID Path**: hero.dark.primary.image
+	 * - **API ID Path**: hero.alternative.primary.image
 	 * - **Documentation**: https://prismic.io/docs/field#image
 	 */
 	image: prismic.ImageField<never>;
 }
 
 /**
- * Dark variation for Hero Slice
+ * Alternative variation for Hero Slice
  *
- * - **API ID**: `dark`
+ * - **API ID**: `alternative`
  * - **Description**: Default
  * - **Documentation**: https://prismic.io/docs/slice
  */
-export type HeroSliceDark = prismic.SharedSliceVariation<
-	'dark',
-	Simplify<HeroSliceDarkPrimary>,
+export type HeroSliceAlternative = prismic.SharedSliceVariation<
+	'alternative',
+	Simplify<HeroSliceAlternativePrimary>,
 	never
 >;
 
 /**
  * Slice variation for *Hero*
  */
-type HeroSliceVariation = HeroSliceDefault | HeroSliceDark;
+type HeroSliceVariation = HeroSliceDefault | HeroSliceAlternative;
 
 /**
  * Hero Shared Slice
@@ -3266,6 +3359,9 @@ declare module '@prismicio/client' {
 			CaseStudyDocumentDataSlicesSlice,
 			CategoriesDocument,
 			CategoriesDocumentData,
+			HomepageDocument,
+			HomepageDocumentData,
+			HomepageDocumentDataSlicesSlice,
 			PageDocument,
 			PageDocumentData,
 			PageDocumentDataSlicesSlice,
@@ -3344,10 +3440,10 @@ declare module '@prismicio/client' {
 			FullWidthImageSliceDefault,
 			HeroSlice,
 			HeroSliceDefaultPrimary,
-			HeroSliceDarkPrimary,
+			HeroSliceAlternativePrimary,
 			HeroSliceVariation,
 			HeroSliceDefault,
-			HeroSliceDark,
+			HeroSliceAlternative,
 			HorizontalGallerySlice,
 			HorizontalGallerySliceDefaultPrimaryImageItem,
 			HorizontalGallerySliceDefaultPrimary,
